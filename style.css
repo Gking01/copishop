@@ -100,3 +100,102 @@ header h1{
   margin-bottom: 1rem;
   font-size: 5rem;
 }
+
+/* This is the shop section */
+.shopContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4rem 0;
+  width: 100%;
+  height:auto;
+}
+
+.shopContainer .circle{
+  justify-self: center;
+  overflow: hidden;
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  background: url("./img/int.jpg");
+  border-radius: 50%;
+  background-size: 140% 100%;
+}
+
+.shopContainer .circle p{
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poiret One', cursive;
+  color: rgb(255, 255, 255);
+  transition: 0.5s all linear;
+  opacity: 0;
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.shopContainer .circle .overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.2);
+  transition: 0.5s all linear;
+}
+
+.shopContainer .circle:hover .overlay{
+  background-color: rgba(0,0,0,0.6);
+}
+
+.shopContainer .circle:hover p {
+  left: 50%;
+  opacity: 1;
+
+}
+
+.shopContainer .circle .icon{
+  position: absolute;
+  bottom: 2rem;
+  width: 2rem;
+  height: 2rem;
+  background: rgb(166, 255, 0);
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.5s all linear;
+}
+
+.shopContainer .circle .icon i{
+  position: absolute;
+  color: black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shopContainer .circle .left:hover{
+  left: 6.75rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  bottom: 1.75rem;
+}
+
+.shopContainer .circle .right:hover{
+  right: 6.75rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  bottom: 1.75rem;
+}
+
+.shopContainer .circle .left{
+left: 7rem;
+}
+
+.shopContainer .circle .right{
+right: 7rem;
+}
+
+.shopContainer .circle:hover .icon{
+  bottom: 5rem;
+  opacity: 1;
+}
