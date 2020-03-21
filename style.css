@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.7)), url("./img/bg.jpg");
+  background-size: 100% 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 5rem;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar .logo {
+  position: absolute;
+  top: 50%;
+  left: 4rem;
+  width: 12rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.navbar .logo img{
+  width: 3rem;
+  height: auto;
+  justify-self: right;
+}
+.navbar .logo p{
+  width: 100&;
+  font-family: Arial;
+  padding-top:0.4rem;
+}
+.navbar .navLinks{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.navbar .navLinks .list{
+  list-style: none;
+  display: inline;
+  position: relative;
+}
+
+.navbar .navLinks .list .link{
+  text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  color: rgb(0,0,0);
+  text-transform: uppercase;
+  font-family: 'Dosis', sans-serif;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar #qouteBtn {
+  position: absolute;
+  top: 50%;
+  right: 12rem;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-family: 'Dosis', sans-serif;
+  color: rgb(255, 255, 255);
+  background: rgb(166, 255, 0);
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+}
+
+.navbar #qouteBtn:hover{
+  background: rgb(154, 236, 0);
+}
+
+header h1,
+header h2 {
+  text-align: center;
+  font-family: 'Poiret One', cursive;
+  color: rgb(255, 255, 255);
+}
+
+header h1{
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+}
